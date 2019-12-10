@@ -291,7 +291,7 @@ h1,h2,h3,h4,h5,h6{
 
 }
 .our .single i{
-	margin-right: 30px;
+	margin-bottom: 5px;
 	font-size: 20px;
 	padding:10px;
 	border: 1px solid white;
@@ -313,4 +313,115 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 14px;
 	font-weight: 400;
 	color: #424242;
+	text-align: left;
+}
+
+
+.team_work{
+	padding: 100px 0px;
+	background-color:rgba(0,0,0,.1);
+}
+
+.team_work h1{
+	color: #333333;
+	font-size:30px;
+	font-weight: 700;
+	text-align: center;
+	position: relative;
+}
+.team_work h1:before{
+	content: "";
+	background: #DBD9DA;
+	height: 2px;
+	width: 100px;
+	position: absolute;
+	bottom: 0;
+	top: 200%;
+	left:45%;
+}
+.team_work h1:after{
+	content: "";
+	background: #1293D4;
+	height: 2px;
+	width: 50px;
+	position: absolute;
+	bottom: 0;
+	top: 200%;
+	left:47.5%;
+}
+.team_work p{
+	color: #424242;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.maxWidth.col-lg-3{
+	max-width: 20%;
+}
+
+.team_work {}
+.team_work .single_product{
+	position: relative;
+	overflow: hidden;
+}
+.team_work .single_product i{
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	margin-left: 42%;
+	font-size: 30px;
+	margin-top:47%; 
+	color: white;
+	transform: scale(.2);
+	opacity: 0;
+	transition: .3s;
+}
+.team_work .single_product:before {
+	position: absolute;
+	content: "";
+	left:7px;
+	right: 7px;
+	top: 7px;
+	bottom: 7px;
+	background-color: rgba(18,147,212,.5);
+	transform: scale(.5);
+	opacity: 0;
+	transition: .3s;
+}
+.maxWidth:hover .single_product:before{
+	transform: scale(1);
+	opacity: 1;
+}
+.maxWidth:hover i{
+	transform: scale(1);
+	opacity: 1;
+}
+.team_work .single_product img{
+	width: 250px;
+	height: 250px;
+}
+
+.team_work .text_area{
+	border-top: 0px;
+	box-shadow: 0px 1px 1px #BCBCBC;
+}
+.team_work .text_area h5{
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 15px;
+}
+.team_work .text_area p{
+	font-size: 14px;
+	color:#424242;
+	font-weight: 400;
+	text-align: center;
+	font-size: 14px;
+	margin:0px;
+	padding-bottom: 15px;
+}
+.maxWidth:hover .text_area{
+	border-bottom:2px solid rgba(18,147,212,1);
 }
